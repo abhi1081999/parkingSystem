@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+.container{
+  
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: rgba(27, 27, 27, 0.87);
+}
+.container .card{
+  position: relative;
+  min-width: 220px;
+  height: 320px;
+box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+             -5px -5px 15px rgba(255, 255, 255, 0.356),
+              5px  5px 15px rgba(0,0,0,0.3),
+             -5px -5px 15px rgba(255,255,255,0.1);
+
+             border-radius: 20px;
+             margin: 30px 30px;
+
+}
+.container .card .box{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+   border: 2px solid #1e1f23;
+   box-shadow: 0px 20px 50px rgba(8, 8, 8, 0.849);
+   transition: 0.5s;
+   transition: filter 300ms;
+
+}
+
+.container .card .box:hover{
+  transform: translateY(-50px);
+  filter: brightness(1.5);
+}
+h1{
+  text-align: center;
+  color: burlywood;
+
+}
+
+.bg-model{
+  position: fixed;
+  width: 50%;
+  height: 60vh;
+  /* background-color: sienna; */
+  background-color: rgba(0,0,0,0.7);
+  
+  
+  top:0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0,5s;
+  
+
+}
+
+
+.details{
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  background-color: rgba(231, 226, 219, 0.486);
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+.details button{
+padding:  10px 30px;
+border: none;
+color: white;
+cursor: pointer;
+
+
+}
